@@ -48,7 +48,7 @@
             <div class="container">
 
               <!-- Logo -->
-              <a class="logo" href="#">Welcome</a>
+              <a class="logo" href="#">[{'welcome'}]</a>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon-bar"><i class="fas fa-bars"></i></span>
@@ -206,6 +206,15 @@
                 -moz-transform:scale(2.0); /* Firefox */
                 -webkit-transform:scale(2.0); /* Safari and Chrome */
                 -o-transform:scale(2.0); /* Opera */ 
+            }
+            
+            .zoom2:hover {
+                 transition: 0.3s;
+                transform:scale(1.3);
+                -ms-transform:scale(1.3); /* IE 9 */
+                -moz-transform:scale(1.3); /* Firefox */
+                -webkit-transform:scale(1.3); /* Safari and Chrome */
+                -o-transform:scale(1.3); /* Opera */ 
             }
 
             </style>
@@ -824,7 +833,7 @@
                   
                     <div class="info full-width">
                         <div class="row">
-                            <div class="col-md-4"  onclick=" window.open('https://api.whatsapp.com/send?phone=6285645764315&amp;text=Saya%20tertarik%20dengan%20portfolio%20anda,%20Apakah%20anda%20bersedia%20saya%20undang%20untuk%20interview', '_blank');">
+                            <div class="col-md-4 zoom2"  onclick=" window.open('https://api.whatsapp.com/send?phone=6285645764315&amp;text=Saya%20tertarik%20dengan%20portfolio%20anda,%20Apakah%20anda%20bersedia%20saya%20undang%20untuk%20interview', '_blank');">
                                 <div class="item mb-sm50">
                                   <span class="icon icon-mobile"></span>
                                     <div class="cont">
@@ -833,7 +842,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" >
+                            <div class="col-md-4 zoom2" >
                                 <div class="item mb-sm50" onclick="window.open('https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dyahyaabdulh%40gmail.com%26subject%3DHi%2520Yahya%26body%3Dbody%2520goes%2520here', '_blank');">
                                     <span class="icon icon-envelope"></span>
                                     <div class="cont">
@@ -842,7 +851,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 zoom2">
                                 <div class="item">
                                     <span class="icon icon-map-pin"></span>
                                     <div class="cont">
