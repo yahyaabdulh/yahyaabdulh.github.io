@@ -191,6 +191,7 @@ span, a, a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
+
 .section-padding {
   padding: 100px 0;
 }
@@ -467,6 +468,7 @@ span, a, a:hover {
 }
 .header .caption {
   margin-top: 50px;
+  color: #fff;
 }
 .header .caption h2 {
   font-weight: 200;

@@ -84,16 +84,28 @@
         </nav>
         <!-- End Navbar ====
         ======================================= -->
-
+        <style type="text/css">
+            .layer {
+            background-color:rgba(0, 0, 0, 0.73);
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*opacity: 0.9;*/
+            width: 100%;
+            height: 100%;
+           
+        }
+        </style>
 
         <!-- =====================================
         ==== Start Header -->
-        <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="5"  data-background="" data-stellar-background-ratio="0.5">
-            <div class="container">
-                <div class="row">
-                    <div class="vertical-center full-width text-center caption">
-                        <h2>Yahya Abdul Hamid</h2>
-                        <h1 class="cd-headline clip" style="font-size: 40px;">
+        <header class="header valign bg-img " data-scroll-index="0" data-overlay-dark="5"  data-background="img/bg1.jpg" data-stellar-background-ratio="0.5" >
+        <div class="layer"> </div>
+            <div class="container" >
+                <div class="row ">
+                    <div class="vertical-center full-width text-center caption " >
+                        <h2 >Yahya Abdul Hamid</h2>
+                        <h1 class="cd-headline clip" style="font-size: 37px;">
                             <span class="blc">I Am </span>
                             <span class="cd-words-wrapper">
                               <b class="is-visible">a System Analyst</b>
@@ -110,6 +122,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
+        
         </header>
         <!-- End Header ====
         ======================================= -->
@@ -133,16 +146,19 @@
 
                             <div class="social-icon">
                                 <a onclick="window.open('https://web.facebook.com/hamaz.ndabz96', '_blank');">
-                                    <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                                    <span class="icon"><i class="fab fa-facebook-f" title="facebook"></i></span>
                                 </a>
                                 <a onclick="window.open('https://www.instagram.com/yahya_abdulh/', '_blank');">
-                                    <span class="icon"><i class="fab fa-instagram"></i></span>
+                                    <span class="icon"><i class="fab fa-instagram" title="instagram"></i></span>
                                 </a>
                                 <a onclick="window.open('https://api.whatsapp.com/send?phone=6285645764315&amp;text=Saya%20tertarik%20dengan%20portfolio%20anda,%20Apakah%20anda%20bersedia%20saya%20undang%20untuk%20interview', '_blank');">
-                                    <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                                    <span class="icon"><i class="fab fa-whatsapp" title="whatsapp"></i></span>
                                 </a>
                                 <a onclick="window.open('https://www.linkedin.com/in/yahya-abdul-hamid-081822150/', '_blank');">
-                                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                                    <span class="icon"><i class="fab fa-linkedin" title="linkedin"></i></span>
+                                </a> 
+                                <a onclick="window.open('https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dyahyaabdulh%40gmail.com%26subject%3DHi%2520Yahya%26body%3Dbody%2520goes%2520here', '_blank');">
+                                    <span class="icon"><i class="icon icon-envelope" title="gmail"></i></span>
                                 </a>
                             </div>
 
@@ -164,6 +180,24 @@
          * {
               box-sizing: border-box;
             }
+
+            .card {
+                width: 65px;
+                height: 65px;
+                position: relative;
+                display: inline-block;
+            }
+            .card .img-top {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+            }
+            .card:hover .img-top {
+                display: inline;
+            }
+
 
             .zoom:hover {
                  transition: 0.3s;
@@ -190,116 +224,117 @@
 
                   <div class="col-lg-2 col-md-6 ">
                         <div class="item mb-md50 ">
-                            <img src="img/icon/analyst.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                     
+                            <img src="img/icon/analyst2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Analyst</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active bolt">
                         <div class="item mb-md50 ">
-                             <img src="img/icon/desain.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                             <img src="img/icon/desain2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Desain System</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
-                        <div class="item mb-md50 ">
-                            <img src="img/icon/at.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                        <div class="item mb-md50">
+                            <img src="img/icon/at2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Automated Testing</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active bolt">
                         <div class="item mb-md50">
-                            <img src="img/icon/ci.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                            <img src="img/icon/ci2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                            <h6 style="font-size: 15px;">Continous Integration Test</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active bolt">
                         <div class="item mb-md50">
-                            <img src="img/icon/erp.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                            <img src="img/icon/erp2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                            <h6 style="font-size: 15px;">Accounting & ERP</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
-                        <div class="item mb-md50">
-                           <img src="img/icon/documentation.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                        <div class="item mb-md50 ">
+                           <img src="img/icon/documentation2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                            <h6 style="font-size: 15px;"> System Documentation</h6>
                         </div>
                     </div>
                     
-                    <div class="bord full-width"></div>
+                    <div class="bord full-width"></div> <div class="bord full-width"></div>
 
                     <div class="col-lg-2 col-md-6">
-                        <div class="item mb-md50" >
-                            <img src="img/icon/implementation.png" class="icon zoom"  style="width: 55px; height: 60px;" alt="image">
+                        <div class="item mb-md50 " >
+                            <img src="img/icon/implementation2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;"> System Implementation</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active bolt">
-                        <div class="item mb-sm50">
-                            <img src="img/icon/react.png" class="icon zoom"  style="width: 55px; height: 60px;" alt="image">
+                        <div class="item mb-sm50 ">
+                            <img src="img/icon/react2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;"> React js</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
-                        <div class="item">
-                            <img src="img/icon/angular.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                        <div class="item ">
+                            <img src="img/icon/angular2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;"> Angular js</h6>
                         </div>
                     </div> 
                     <div class="col-lg-2 col-md-6 active bolt">
                         <div class="item mb-md50">
-                            <img src="img/icon/jquery.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                            <img src="img/icon/jquery2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">JQuery</h6>
                         </div>
                     </div>
                    
                     <div class="col-lg-2 col-md-6 active bolt">
                         <div class="item">
-                             <img src="img/icon/nodejs.png" class="icon zoom"  style="width: 65px; height: 60px;" alt="image">
+                             <img src="img/icon/nodejs2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Node js</h6>
                         </div>
                     </div>
                      <div class="col-lg-2 col-md-6 ">
                         <div class="item mb-sm50">
-                            <img src="img/icon/asp.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                            <img src="img/icon/asp2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                              <h6 style="font-size: 15px;">ASP</h6>
                         </div>
                     </div>
 
-                    <div class="bord full-width"></div>
+                    <div class="bord full-width"></div> <div class="bord full-width"></div>
 
                     <div class="col-lg-2 col-md-6">
                         <div class="item mb-md50" >
-                            <img src="img/icon/php.png" class="icon zoom"  style="width: 80px; height: 55px;" alt="image">
+                            <img src="img/icon/php2.png" class="icon zoom"  style="width: 80px; height: 55px;" alt="image">
                             <h6 style="font-size: 15px;">PHP</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active">
                         <div class="item mb-sm50">
-                           <img src="img/icon/mysql.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                           <img src="img/icon/mysql2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                            <h6 style="font-size: 15px;">My SQL</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="item">
-                            <img src="img/icon/sqlserver.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                            <img src="img/icon/sqlserver2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">SQL Server</h6>
                         </div>
                     </div> 
                     <div class="col-lg-2 col-md-6 active">
                         <div class="item mb-md50">
-                             <img src="img/icon/katalon.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                             <img src="img/icon/katalon2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Katalon</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 active">
                         <div class="item mb-sm50">
-                             <img src="img/icon/postman.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                             <img src="img/icon/postman2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                             <h6 style="font-size: 15px;">Postman</h6>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="item">
-                             <img src="img/icon/git.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
+                             <img src="img/icon/git2.png" class="icon zoom"  style="width: 60px; height: 60px;" alt="image">
                              <h6 style="font-size: 15px;">Git</h6>
                         </div>
                     </div>
